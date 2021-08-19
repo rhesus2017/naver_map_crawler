@@ -8,7 +8,6 @@ from logging.handlers import TimedRotatingFileHandler
 import traceback
 from datetime import datetime
 import time
-import pymysql
 import json
 import re
 from selenium.common.exceptions import NoSuchElementException
