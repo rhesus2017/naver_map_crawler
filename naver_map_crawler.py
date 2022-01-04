@@ -39,7 +39,7 @@ chrome_options.add_argument('--window-size=1920,9720')
 chrome_options.add_argument('--disable-gpu')
 chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36')
 
-driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=current_dir + '\driver\chromedriver')
+driver = webdriver.Chrome(chrome_options=chrome_options, executable_path='/Users/ktj/Documents/github/selenium_crawler/driver/chromedriver')
 driver.implicitly_wait(3)
 
 
@@ -377,7 +377,7 @@ if __name__ == '__main__':
 
     try:
         # JSON파일 읽어오기
-        with open(current_dir + '\json\store.json', 'r', encoding='UTF-8') as f:
+        with open('/Users/ktj/Documents/github/selenium_crawler/json/store.jsonㄴㄴ', 'r', encoding='UTF-8') as f:
             json_data = json.load(f)
 
         # 크롤링 시작
